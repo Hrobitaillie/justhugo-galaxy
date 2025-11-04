@@ -1,0 +1,30 @@
+@utility btn-primary {
+    @apply ease-linear duration-75 bg-primary text-white rounded-md py-2 px-4;
+    z-index: 10;
+    transform-style: preserve-3d;
+    & svg {
+        @apply fill-black;
+    }
+    &:after{
+        @apply absolute top-0 left-0 w-full h-full bg-primary-700 rounded-md transition ease-linear duration-75;
+        content: "";
+        transform: translateZ(-1px);
+    }
+    &:hover{
+        @apply -translate-y-1 ease-bouncy duration-300;
+        &:after{
+            @apply ease-bouncy duration-300;
+            transform: translateZ(-1px) translateY(4px);
+        }
+    }
+    &[disabled] {
+        @apply opacity-50 cursor-not-allowed pointer-events-none;
+        &.need-to-read{
+            @apply opacity-100 bg-primary/30 text-white/90;
+        }
+        &:after{
+            opacity: 0;
+            
+        }
+    }
+}

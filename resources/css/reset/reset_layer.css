@@ -1,0 +1,12 @@
+
+.reset-splide {
+    display: flex;
+    & .splide__arrow {
+        position: relative;
+        transform: translate(0);
+        top: 0;
+        right: 0;
+        left: 0;
+        width: unset;
+    }
+}

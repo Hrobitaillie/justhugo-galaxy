@@ -1,0 +1,51 @@
+@theme {
+  --font-primary: Poppins;
+  --font-size-title-5xl: clamp(33px, 13.71px + 3.01vw, 60px);
+  --font-size-title-4xl: clamp(30px, 25.71px + 0.67vw, 36px);
+  --font-size-title-3xl: clamp(24px, 19.71px + 0.67vw, 30px);
+  --font-size-title-2xl: clamp(20px, 17.14px + 0.45vw, 24px);
+  --font-size-title-xl: clamp(18px, 16.57px + 0.22vw, 20px);
+  --font-size-title-lg: clamp(16px, 14.57px + 0.22vw, 18px);
+}
+
+@variant sm {
+  --font-size-title-5xl: clamp(33px, 13.71px + 3.01vw, 60px);
+  --font-size-title-4xl: clamp(30px, 25.71px + 0.67vw, 36px);
+  --font-size-title-3xl: clamp(24px, 19.71px + 0.67vw, 30px);
+  --font-size-title-2xl: clamp(20px, 17.14px + 0.45vw, 24px);
+  --font-size-title-xl: clamp(18px, 16.57px + 0.22vw, 20px);
+  --font-size-title-lg: clamp(16px, 14.57px + 0.22vw, 18px);
+}
+
+@variant 2xl {
+  --font-size-title-5xl: clamp(60px, -20.00px + 5.21vw, 80px);
+  --font-size-title-4xl: clamp(36px, 4.00px + 2.08vw, 44px);
+  --font-size-title-3xl: clamp(30px, 6.00px + 1.56vw, 36px);
+  --font-size-title-2xl: clamp(24px, 0.00px + 1.56vw, 30px);
+  --font-size-title-xl: clamp(20px, 12.00px + 0.52vw, 22px);
+  --font-size-title-lg: clamp(18px, 10.00px + 0.52vw, 20px);
+}
+
+@utility title-xl {
+  font-size: var(--font-size-title-xl);
+  font-weight: 500;
+}
+
+@utility title-2xl {
+  font-size: var(--font-size-title-2xl);
+  font-weight: 500;
+}
+
+@utility title-3xl {
+  font-size: var(--font-size-title-3xl);
+  font-weight: 500;
+}
+@utility title-4xl {
+  font-size: var(--font-size-title-4xl);
+  font-weight: 500;
+  line-height: 110%;
+}
+@utility title-5xl {
+  font-size: var(--font-size-title-5xl);
+  font-weight: 500;
+}

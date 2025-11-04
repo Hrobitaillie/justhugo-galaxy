@@ -1,0 +1,9 @@
+@utility category-badge {
+    @apply px-2 py-1 text-sm font-semibold bg-white/30 rounded-md border-current border w-fit inline-flex gap-2 items-center;
+}
+.category-badge svg{
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    flex-shrink: 0;
+}
