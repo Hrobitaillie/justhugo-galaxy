@@ -56,25 +56,13 @@ export default defineConfig({
     },
   },
   server: {
-    host: 'localhost',
+    host: '0.0.0.0',
     port: 5174,
-    strictPort: true,
+    strictPort: false,
     cors: true,
     hmr: {
       port: 5174,
-    },
-    watch: {
-      usePolling: true,
-      interval: 1000,
-    },
-    middlewareMode: false,
-    configureServer(server) {
-      server.middlewares.use((req, res, next) => {
-        if (['fa.svg', 'project.svg'].includes(req.url)) {
-          res.setHeader('Cache-Control', 'no-store')
-        }
-        next()
-      })
+      host: 'localhost'
     }
   },
 });

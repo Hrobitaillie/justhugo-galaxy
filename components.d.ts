@@ -11,10 +11,15 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    DemoCard: typeof import('./resources/js/components/home/DemoCard.vue')['default']
+    DemosGrid: typeof import('./resources/js/components/home/DemosGrid.vue')['default']
+    Galaxy: typeof import('./resources/js/components/blocs/galaxy/Galaxy.vue')['default']
+    HeroSection: typeof import('./resources/js/components/home/HeroSection.vue')['default']
     HorizontalScroll: typeof import('./resources/js/components/tacotaf/HorizontalScroll.vue')['default']
     NotFound: typeof import('./resources/js/components/NotFound.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SearchFilters: typeof import('./resources/js/components/home/SearchFilters.vue')['default']
     Sprite: typeof import('./resources/js/components/Sprite.vue')['default']
   }
 }

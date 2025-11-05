@@ -11,7 +11,6 @@
     {!! file_get_contents(public_path('assets/sprites/project.svg')) !!}
     {!! file_get_contents(public_path('assets/sprites/fa.svg')) !!}
     <div id="app">
-        <app/>
     </div>
 </body>
 </html>

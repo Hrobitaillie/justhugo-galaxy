@@ -11,8 +11,7 @@ import { i18nVue } from 'laravel-vue-i18n';
 import VueSplide from '@splidejs/vue-splide';
 
 
-const app = createApp({})
-app.component('app', App)
+const app = createApp(App)
 app.use(router)
 app.use(VueSplide)
 app.use(i18nVue, {
